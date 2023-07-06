@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
-const UserModule = require('../modules/users');
-const User=UserModule;
+const userModule = require("../modules/user.module");
+
+const User=userModule;
 
 const getAllUsersID =async()=>{
     const usersID=User.find({})
