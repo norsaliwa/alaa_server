@@ -1,7 +1,10 @@
 const express = require("express");
-const { creatNewUser,} = require("../Controller/UserController");
+const { creatNewUser, deleteUserByPhone,} = require("../Controller/UserController");
+const { createQuestion } = require("../Controller/createQuestion");
 const UserRouter = express.Router();
 
-UserRouter.get("/creatNewUser",creatNewUser)
+UserRouter.post("/creatNewUser",creatNewUser)
+UserRouter.delete("/deleteUserByPhone",deleteUserByPhone)
+UserRouter.post("/createQuestion", createQuestion)
 
 module.exports = UserRouter;

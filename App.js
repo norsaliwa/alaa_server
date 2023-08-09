@@ -25,26 +25,7 @@ app.get("/app", (req, res) => {
   }
 );//example
 
-const deleteAllUser = async()=>{
-  UserModule.deleteMany({})
-  .then(() => {
-    console.log('All users deleted');
-  })
-  .catch((error) => {
-    console.error('Error deleting users:', error);
-  });
-}
-// deleteAllUser()
 
-app.post("/test", (req, res) => {
-  try{
-    res.status(200).json(req.body)
-    // console.log(req.body);
-  }catch(e){
-    res.status(500).json({message:e.message})
-    console.log(e.message);
-  }
-})
 
 app.use("/", Routs);
 

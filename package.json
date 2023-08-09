@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "start": "nodemon Server.js"
+    "start": "nodemon Server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "http": "^0.0.1-security",
+    "infobip": "^0.1.0",
+    "infobip-rtc": "^2.1.7",
     "mongoose": "^7.2.2",
     "nodemon": "^2.0.22"
   }
